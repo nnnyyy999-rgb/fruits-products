@@ -1,0 +1,53 @@
+.detail-container {
+    display: flex;
+    gap: 40px;
+}
+
+.detail-image img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-row {
+    margin-bottom: 20px;
+}
+
+.detail-row label {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+}
+
+.detail-description {
+    white-space: pre-wrap;
+    line-height: 1.6;
+}
+
+.detail-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-edit {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.btn-delete {
+    background: #dd5555;
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

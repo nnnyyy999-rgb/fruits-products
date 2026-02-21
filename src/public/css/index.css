@@ -1,0 +1,61 @@
+/* ----- 検索フォーム ----- */
+.product-search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.product-search label {
+    font-weight: bold;
+}
+
+.product-search input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.search-btn {
+    padding: 8px 16px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ----- 商品一覧（カード） ----- */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-name {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-price {
+    color: #666;
+    margin-top: 6px;
+    font-size: 14px;
+}

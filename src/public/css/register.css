@@ -1,0 +1,52 @@
+.form-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-row label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 140px;
+}
+
+.required {
+    color: red;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-back {
+    padding: 10px 22px;
+    background: #ccc;
+    border-radius: 6px;
+}
+
+.btn-submit {
+    padding: 10px 22px;
+    background: #ffcc00;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}

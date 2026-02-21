@@ -1,0 +1,230 @@
+/* ---------------------------------------------------
+   全体レイアウト
+--------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    background: #ffffff;
+}
+
+/* 黒背景タイプ画面用 */
+body.dark-bg {
+    background: #020c1b;
+}
+
+/* ---------------------------------------------------
+   ヘッダー
+--------------------------------------------------- */
+
+.header {
+    height: 60px;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #f4b400; /* UI画像の黄色 */
+    font-size: 22px;
+}
+
+.logout-btn {
+    padding: 6px 18px;
+    border: 1px solid #f4b400;
+    color: #f4b400;
+    background: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* ---------------------------------------------------
+   メインコンテンツ
+--------------------------------------------------- */
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+/* ---------------------------------------------------
+   検索ボックス
+--------------------------------------------------- */
+
+.search-box {
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 25px;
+}
+
+.search-box-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.search-row {
+    display: flex;
+    gap: 14px;
+}
+
+.search-input {
+    width: 260px;
+    height: 38px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+/* 黄色の検索ボタン */
+.search-btn {
+    background: #f4b400;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 0 20px;
+    height: 38px;
+}
+
+/* ---------------------------------------------------
+   商品一覧カード
+--------------------------------------------------- */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 12px 14px;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.product-price {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------------------------------------------------
+   ページネーション（黄色のドット）
+--------------------------------------------------- */
+
+.pagination {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.pagination span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f4b400;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* ---------------------------------------------------
+   商品登録/編集（黒背景時）
+--------------------------------------------------- */
+
+.form-wrapper {
+    background: #ffffff;
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.input-text,
+.input-file,
+.textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.textarea {
+    height: 130px;
+}
+
+/* エラー（赤） */
+.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+/* ボタン群（左：グレー、右：黄色） */
+.form-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-gray {
+    background: #bfbfbf;
+    color: #fff;
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-yellow {
+    background: #f4b400;
+    color: #fff;
+    width: 120px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
